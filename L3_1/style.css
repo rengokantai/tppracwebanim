@@ -1,0 +1,32 @@
+body{
+    background-color: #349;
+    color: white;
+}
+
+
+a{
+    color:white;
+}
+
+.main-nav{
+    list-style:none;
+    padding-left:20px;
+}
+
+.main-nav li{
+    float:left;
+    width:140px;
+    height:30px;
+    line-height:30px;
+    background-color: paleturquoise;
+    margin-right:10px;
+    text-align: center;
+    font-family:Arial;
+    font-size:14px;
+    text-transform: uppercase;
+}
+
+.main-nav li a{
+    text-decoration: none;
+    display: block;
+}
