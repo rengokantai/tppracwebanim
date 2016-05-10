@@ -35,7 +35,7 @@ a{
     margin-right: 0;
 }
 .main-nav li a{
-
+    width:120px;
     background-color: paleturquoise;
     text-decoration: none;
     display: block;
@@ -47,4 +47,27 @@ a{
 .main-nav li a:hover{
     background-color: #349;
     padding-bottom:0;
+}
+.main-nav li a::before{
+    content: "[";
+    opacity:0;
+    margin-right:4px;
+    position: relative;
+    top:-2px;
+}
+.main-nav li a::after{
+    content: "]";
+    opacity:0;
+    margin-left:4px;
+    position: relative;
+    top:-2px;
+}
+.main-nav li a::after,.main-nav li a::before{
+    transition:all .5s;
+}
+.main-nav li a:hover::before{
+    opacity:1;
+}
+.main-nav li a:hover::after{
+    opacity:1;
 }
