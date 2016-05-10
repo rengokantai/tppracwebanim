@@ -1,3 +1,8 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 body{
     background-color: #349;
     color: white;
@@ -10,7 +15,9 @@ a{
 
 .main-nav{
     list-style:none;
-    padding-left:20px;
+    padding-left:0px;
+    margin:20px auto;
+    width: 728px;
 }
 
 .main-nav li{
@@ -18,15 +25,26 @@ a{
     width:140px;
     height:30px;
     line-height:30px;
-    background-color: paleturquoise;
-    margin-right:10px;
+    margin-right:4px;
     text-align: center;
     font-family:Arial;
     font-size:14px;
     text-transform: uppercase;
 }
-
+.main-nav li:last-child{
+    margin-right: 0;
+}
 .main-nav li a{
+
+    background-color: paleturquoise;
     text-decoration: none;
     display: block;
+    background-color: #4455aa;
+    border-bottom:1px solid white;
+    padding-bottom:8px;
+    transition: all .5s;
+}
+.main-nav li a:hover{
+    background-color: #349;
+    padding-bottom:0;
 }
