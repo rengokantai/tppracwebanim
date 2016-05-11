@@ -31,6 +31,16 @@ body{
 .centerSwipe::before, .skewSwipe::before{
     left:50%;
 }
+.skewSwipe::before{
+    transform:skewX(30deg);
+}
+.skewSwipe{
+    overflow: hidden;
+}
+.skewSwipe:hover::before{
+    width: 250px;
+    left:-10%;
+}
 .btnSwipe span{
     color: white;
     position: absolute;
