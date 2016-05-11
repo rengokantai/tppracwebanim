@@ -3,8 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("input[type='text']").click(function() {
+                var $this = $(this);
+                $this.attr("placeholder","");
+                $this.parent().find("label").addClass("label-top");
+            });
+        })
+    </script>
 </head>
 <body>
-
+<form>
+    <div class="input-group">
+        <label for="txtFirstName">First Name</label>
+        <input type="text" id="txtFirstName" placeholder="First Name" />
+    </div>
+    <div class="input-group">
+        <label for="txtLastName">Last Namem</label>
+        <input type="text" id="txtLastName" placeholder="Last Name" />
+    </div>
+</form>
 </body>
 </html>

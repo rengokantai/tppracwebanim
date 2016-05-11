@@ -5,7 +5,7 @@ body {
 }
 
 .main-nav {
-    background-color: #298234;
+    background-color: #333;
     color: white;
     width: 100%;
     height: 80px;
@@ -28,7 +28,6 @@ body {
 }
 
 .nav-list li a span {
-    background-color: rgba(255,255,255,.2);
     color: white;
     text-transform: uppercase;
     text-decoration: none;
@@ -38,23 +37,32 @@ body {
     width: 160px;
     height: 40px;
     line-height: 40px;
-    transition: all 1s;
+    transform-origin: 0 0;
+    transition: all .5s;
 }
 
-.nav-list li a:hover {
-    transform: scaleY(0);
+.nav-list li a:hover span {
+    transform: scaleY(.85);
+    background-color: #444;
 }
 
 .nav-list li a::after {
-    content: attr(data-title);
-    background-color: #197224;
+    content: "";
+    background-color: #222;
     display: block;
-    width: 160px;
+    width: 156px;
     height: 40px;
     line-height: 40px;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 2px;
     color: white;
     text-transform: uppercase;
+    transform-origin: 0 100%;
+    transform: scaleY(0);
+    transition: all .5s;
+}
+
+.nav-list li a:hover::after {
+    transform: scaleY(.15);
 }
