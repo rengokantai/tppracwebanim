@@ -26,6 +26,10 @@ body{
 }
 .btnSwipe:hover::before{
     width:200px;
+    left:0%;
+}
+.centerSwipe::before, .skewSwipe::before{
+    left:50%;
 }
 .btnSwipe span{
     color: white;
