@@ -1,6 +1,6 @@
 button{
     display: block;
-    margin:20px auto;
+    margin:20px 0;
 }
 
 .btn{
@@ -16,6 +16,7 @@ button{
     padding:0;
     position: relative;
     overflow: hidden;
+    transition:all .5s;
 }
 .btn .btn-icon{
     width:70px;
@@ -23,8 +24,18 @@ button{
     text-align: center;
     line-height: 70px;
 }
-.btn .btn-text{
+.btn-stretch .btn-text{
+    position: absolute;
+    left:75px;
+    top: -10px;
+    opacity:0;
+    transition: all .5s;
+}
+.btn-spin .btn-text{
     position: absolute;
     left:75px;
     top: 20px;
+}
+.btn-stretch:hover{
+    width:200px;
 }
