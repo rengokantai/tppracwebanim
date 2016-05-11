@@ -1,0 +1,42 @@
+body{
+    background-color: #eeeeee;
+}
+
+.btnSwipe{
+    background-color: #4466aa;
+    color: white;
+    border:none;
+    width:200px;
+    height: 40px;
+    text-transform: uppercase;
+    position: relative;
+
+}
+
+.btnSwipe::before{
+    content: "";
+    display: block;
+    background-color: #fff;
+    width:0px;
+    height:40px;
+    position: absolute;
+    top:0;
+    left:0;
+    transition:all .5s;
+}
+.btnSwipe:hover::before{
+    width:200px;
+}
+.btnSwipe span{
+    color: white;
+    position: absolute;
+    top:0;
+    left:0;
+    width:200px;
+    height:40px;
+    line-height:40px;
+    transition:all .5s;
+}
+.btnSwipe span:hover{
+    color: #4466aa;
+}
