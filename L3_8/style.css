@@ -13,4 +13,18 @@ button{
     width:70px;
     height:70px;
     border-radius:70px;
+    padding:0;
+    position: relative;
+    overflow: hidden;
+}
+.btn .btn-icon{
+    width:70px;
+    height:70px;
+    text-align: center;
+    line-height: 70px;
+}
+.btn .btn-text{
+    position: absolute;
+    left:75px;
+    top: 20px;
 }
